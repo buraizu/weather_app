@@ -8,7 +8,7 @@ if(!requestedLocation) {
 } else {
     geocode(requestedLocation, (error, { longitude, latitude, location }) => {
         if(error) {
-           return console.log(error) // function execution ceases after logging to console 
+           return console.log(error) // function execution ceases after logging to console. 
         }
     
         forecast(longitude, latitude, (error, forecastData) => {
